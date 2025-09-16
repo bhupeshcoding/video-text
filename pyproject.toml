@@ -1,0 +1,16 @@
+[project]
+name = "vttx"
+version = "0.1.0"
+description = "CPU-friendly video-to-text (video → audio → transcript) with MoviePy + pluggable STT backends"
+authors = [{name="Bhupesh Joshi"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text="MIT"}
+dependencies = ["moviepy", "numpy", "tqdm", "rich", "soundfile"]
+
+[project.optional-dependencies]
+faster-whisper = ["faster-whisper>=1.0.0"]
+vosk = ["vosk>=0.3.45"]
+
+[project.scripts]
+vttx = "vttx.cli:main"
