@@ -1,0 +1,1 @@
+This a video to text converter library, it can convert video to text.
